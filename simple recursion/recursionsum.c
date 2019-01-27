@@ -6,7 +6,7 @@ int num, result;
     printf("Enter the Nth number: ");
     scanf("%d", &num);
     result= sum(num);
-    result=result-1;
+    //result=result-1;
     printf("\nthe sum of N is %d",result);
 }
 int sum(int num){
@@ -16,7 +16,7 @@ int sum(int num){
 		return num+sum(num-1);
 	
 	}else{
-         	return 1;
+         	return 0;
         	
 	}
 }
